@@ -92,12 +92,15 @@ const About = () => {
           className="mt-20"
         >
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1522163182402-834f871fd851"
-              alt="Mountain climbing"
-              className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <iframe
+              className="w-full h-[500px]"
+              src="https://www.youtube.com/embed/G4ZrD7IoFlo?autoplay=1&mute=1&loop=1&playlist=G4ZrD7IoFlo"
+              title="Experience the Adventure"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
               <h3 className="text-2xl font-bold mb-2">Experience the Adventure</h3>
               <p className="text-gray-200">Join us on an unforgettable journey to the world's highest peaks</p>
@@ -107,6 +110,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
 export default About;

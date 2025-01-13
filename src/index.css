@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+    color: #facc15;
+    border-bottom: 2px solid #facc15;
+  }
+  
